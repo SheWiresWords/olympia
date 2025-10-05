@@ -106,6 +106,26 @@ style={{marginRight: '2rem'}}>
                 className="pedestal-image"
               />
             </div>
+          </div>  
+
+           <button className="carousel-arrow right" onClick={nextGod} aria-label="Next god"
+style={{marginLeft: '2rem'}}>
+            ↠ 
+          </button>
+        </div>
+
+        {/*card info*/}
+        <div className="god-info">
+          <h2 className="god-name">{currentGod.name}</h2>
+          <h3 className="god-title">{currentGod.title}</h3>
+          <p className="god-description">{currentGod.description}</p>
+          <div className="god-counter">
+            {currentIndex + 1} / {gods.length}
           </div>
-  
-export default App;         
+        </div>   
+      </div>     
+    </div>   
+  );    
+}
+       
+export default App;            
