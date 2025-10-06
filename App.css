@@ -10,9 +10,8 @@ body{
 }
     
 /* Intro screen stuff*/
-   
-                       
-      
+                                 
+    
 .throne-room{               
   background: linear-gradient(to bottom, 
     #D2B48C 0%,
@@ -65,7 +64,6 @@ body{
       rgba(203, 120, 33, 0.1) 20px,
       rgba(203, 120, 33, 0.1) 22px
     );
-  pointer-events: none;
   opacity: 0.6;
 }       
 
@@ -82,5 +80,57 @@ body{
     #654321 20%,
     #5C4033 100%);
   z-index: 0;
-  pointer-events: none;
+}
+   
+/*Throne room decorations*/
+.throne-room-decorations {
+  display: contents;
+}
+
+.decoration{
+  opacity: 0.7;
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
+  animation: fadeIn 1s ease-in;
+  width: 100%;   
+  height: auto;
+}           
+
+/* Side columns (9.svg) */   
+.side-left{     
+  grid-column: 1;    
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 0.8;
+  scale:3;
+  margin-left:2rem;
+  z-index:100;
+    
+}
+
+.side-right{
+  grid-column: 3;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 0.8;
+  scale:3;
+  margin-right:2rem;
+  z-index:100;
+}
+
+/* Other decorations list for future edits*/
+.wall-left-top,
+.wall-left-mid,
+.wall-left-bottom,
+.wall-right-top,
+.wall-right-mid,
+.wall-right-bottom,
+.ceiling-left,
+.ceiling-right,
+.floor-left,
+.floor-right{
+  display: none;
 }
