@@ -19,7 +19,7 @@ const gods = [
   {id: 17, name: 'Hestia', title: 'Goddess of the Hearth', description: 'Tends to the fire on Mount Olympus. Sister of Zeus.' }
 ];
 
-//decos for future edits
+//decos for future edits 
 const decorations = [2, 3, 4, 5, 6, 7, 8, 9, 10, 12];
 function App(){
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,8 +45,14 @@ function App(){
   if(showIntro){
     return (
       <div className="intro-container">
-        <img src="/olympia/1.svg" alt="Mount Olympus" className="intro-image" onClick={() => setShowIntro(false)}/>
-        <p className="click-prompt">Click the image to enter</p>
+        <div className="title-section">
+          <h1 className="intro-title">Mount Olympus</h1>
+          <p className="intro-subtitle">House of the Gods</p>
+          <img src="/olympia/1.svg" alt="Mount Olympus" className="intro-image" onClick={() => setShowIntro(false)}/>
+          <button className="enter-button" onClick={() => setShowIntro(false)}>
+            Enter the House of the Gods
+          </button>
+        </div>
       </div>
     );
   }
@@ -79,8 +85,8 @@ function App(){
 
       {/*carousel */}
       <div className="carousel-section">
-        <h1 className="title">Mount Olympus</h1>
-        <p className="subtitle">Throne Room of the Gods</p>
+        <h1 className="title">Welcome to Olympus</h1>
+        <p className="subtitle">House of the Gods</p>
 
         <div className="carousel">
           <button className="carousel-arrow left" onClick={prevGod} aria-label="Previous god" 
