@@ -48,7 +48,7 @@ function App(){
         <div className="title-section">
           <h1 className="intro-title">Mount Olympus</h1>
           <p className="intro-subtitle">House of the Gods</p>
-          <img src="1.svg" alt="Mount Olympus" className="intro-image" onClick={() => setShowIntro(false)}/>
+          <img src="/1.svg" alt="Mount Olympus" className="intro-image" onClick={() => setShowIntro(false)}/>
           <button className="enter-button" onClick={() => setShowIntro(false)}>
             Enter the House of the Gods
           </button>
@@ -63,24 +63,24 @@ function App(){
       {/*decorations*/}
       <div className="throne-room-decorations">
         {/*left wall HIDDEN*/}
-        <img src="3.svg" alt="" className="decoration wall-left-mid" />
-        <img src="4.svg" alt="" className="decoration wall-left-bottom" />
+        <img src="/3.svg" alt="" className="decoration wall-left-mid" />
+        <img src="/4.svg" alt="" className="decoration wall-left-bottom" />
 
         {/*right wallHIDDEN*/}
-        <img src="5.svg" alt="" className="decoration wall-right-top" />
-        <img src="6.svg" alt="" className="decoration wall-right-mid" />
-        <img src="7.svg" alt="" className="decoration wall-right-bottom" />
+        <img src="/5.svg" alt="" className="decoration wall-right-top" />
+        <img src="/6.svg" alt="" className="decoration wall-right-mid" />
+        <img src="/7.svg" alt="" className="decoration wall-right-bottom" />
 
         {/*ceiling HIDDEN*/}
-        <img src="8.svg" alt="" className="decoration ceiling-left" />
+        <img src="/8.svg" alt="" className="decoration ceiling-left" />
 
         {/*side columns*/}
-        <img src="9.svg" alt="" className="decoration side-left" />
-        <img src="9.svg" alt="" className="decoration side-right" />
+        <img src="/9.svg" alt="" className="decoration side-left" />
+        <img src="/9.svg" alt="" className="decoration side-right" />
 
 
         {/*floor HIDDEN*/}
-        <img src="12.svg" alt="" className="decoration floor-right" />
+        <img src="/12.svg" alt="" className="decoration floor-right" />
       </div>
 
       {/*carousel */}
@@ -98,7 +98,7 @@ style={{marginRight: '2rem'}}>
             {/*god characer */}
             <div className="god-figure">
               <img
-                src={`${currentGod.id}.svg`}
+                src={`/${currentGod.id}.svg`}
                 alt={currentGod.name}
                 className="god-image"
               />
@@ -107,7 +107,7 @@ style={{marginRight: '2rem'}}>
             {/*pedestal */}
             <div className="pedestal">
               <img
-                src="11.svg"
+                src="/11.svg"
                 alt="pedestal"
                 className="pedestal-image"
               />
