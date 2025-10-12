@@ -36,7 +36,6 @@ body{
 .intro-title{
   font-size: 56px;
   color: #8B4513;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   margin: 0;
   font-weight: bold;
   letter-spacing: 3px;
@@ -243,7 +242,6 @@ body{
 .title{
   font-size: 46px;
   color: #8B4513;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-bottom: 0.5rem;
   font-weight: bold;
   letter-spacing: 2px;
@@ -277,7 +275,6 @@ body{
   font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-arrow left{
@@ -286,7 +283,7 @@ body{
 
 .carousel-arrow:hover{
   background: rgba(139, 69, 19, 1);
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
 .carousel-arrow:active{
@@ -328,7 +325,7 @@ body{
 }  
    
 .pedestal-image{              
-  width: clamp(160px, 42vw, 320px);
+  width: clamp(160px, 42vw, 320px); /*i looked this up*/
   height: auto;
   filter:drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.3));
 }          
