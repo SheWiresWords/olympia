@@ -12,12 +12,12 @@ const gods = [
   {id: 14, name: 'Ares', title: 'God of War', description: 'God of war, violence, and bloodshed. Son of Zeus and Hera.' },
   {id: 16, name: 'Aphrodite', title: 'Goddess of Love', description: 'Goddess of love, beauty, and desire. Born from sea foam.' },
   {id: 27, name: 'Hephaestus', title: 'God of Fire', description: 'God of fire, metalworking, and crafts. Husband of Aphrodite.' },
-  {id: 25, name: 'Hermes', title: 'Messenger of Gods', description: 'God of trade, thieves, travelers, and messenger of the gods.' },
+  {id: 13, name: 'Hermes', title: 'Messenger of Gods', description: 'God of trade, thieves, travelers, and messenger of the gods.' },
   {id: 15, name: 'Dionysus', title: 'God of Wine', description: 'God of wine, festivity, and theater. Loves to throw parties.' },
   {id: 26, name: 'Hades', title: 'God of the Underworld', description: 'God of death, minerals, and the underworld. Rules over Elysium, Asphodel, and Tartarus.' },
   {id: 19, name: 'Cupid', title: 'God of Love', description: 'Son of Aphrodite and Ares. Can shoot people with arrows to make them fall in love.' },
-  {id: 17, name: 'Hestia', title: 'Goddess of the Hearth', description: 'Tends to the fire on Mount Olympus. Sister of Zeus.' }
-];
+  {id: 17, name: 'Hestia', title: 'Goddess of the Hearth', description: 'Tends to the fire on Mount Olympus. Sister of Zeus.' }   
+];  
 
 //decos for future edits 
 const decorations = [2, 3, 4, 5, 6, 7, 8, 9, 10, 12];
@@ -107,7 +107,7 @@ style={{marginRight: '2rem'}}>
             {/*pedestal */}
             <div className="pedestal">
               <img
-                src="/11.svg"
+                src="/olympia/11.svg"
                 alt="pedestal"
                 className="pedestal-image"
               />
