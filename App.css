@@ -8,10 +8,100 @@ body{
   font-family: 'Georgia', serif;
   background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 50%, #F5E6D3 100%);
 }
-            
-/* Intro screen stuff*/
+    
+/*Intro  */
+.intro-container{  
+  position: fixed;
+  top: 0;  
+  left: 0;   
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*sky color gradient*/
+  background: linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 50%, #F5E6D3 100%);
+}
+
+.title-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  animation: fadeIn 1s ease-in;
+}
+
+.intro-title{
+  font-size: 56px;
+  color: #8B4513;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.intro-subtitle{
+  font-size: 20px;
+  color: #654321; /*lol 654321*/
+  margin: 0;
+  font-style: italic;
+}
+
+.intro-image{
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.enter-button{
+  background: rgba(139, 69, 19, 0.8);
+  color: white;
+  border: 3px solid #8B4514;
+  border-radius: 50px;
+  padding: 1rem 2.5rem;
+  font-size: 18px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.enter-button:hover{
+  background: rgba(139, 69, 19, 1);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.enter-button:active{
+  transform: scale(0.98);
+}
+
+/*figured this cool pulse animation out w/ help from a tutorial!*/
+@keyframes pulse{
+  0%, 100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  50%{
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+} 
+
+/*room container*/
+.olympus-container{
+  display: grid;
+  grid-template-columns: 15vw 1fr 15vw;  grid-template-rows: 1fr;
+  gap: 0;
+  overflow:hidden;
+}
                                    
-       
+/*has gradient for floor*/
 .throne-room{               
   background: linear-gradient(to bottom, 
     #D2B48C 0%,
@@ -95,7 +185,7 @@ body{
   height: auto;
 }           
 
-/* Side columns (9.svg) */   
+/* Side columns (9.svg) img */   
 .side-left{     
   grid-column: 1;    
   grid-row: 1 / -1;
