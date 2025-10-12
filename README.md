@@ -1,4 +1,4 @@
-# Olympia
+# Olympus: House of the Gods
 
 ## Inspiration
 > This project was inspired both by my interest in Greek mythology + my participation in the Athena Award!
